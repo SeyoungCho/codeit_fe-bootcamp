@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0px;
+}
+
+body {
+  font-family: Poppins, "Noto Sans KR", sans-serif;
+  margin: 0;
+}
+
+.main {
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 280px;
+}
+
+.main > p {
+  display: inline-block;
+  margin: 12px 24px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.main > p > span {
+  font-weight: 700;
+}
+
+.header {
+  margin: 80px auto;
+  width: 720px;
+}
+
+.header > h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #8287a4;
+  margin-bottom: 12px;
+}
+
+.header > h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.header > p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8287a4;
+}
+
+.article {
+  padding-top: 86px;
+  width: 720px;
+  margin: 0 auto 64px;
+}
+
+.article > h1 {
+  margin-bottom: 42px;
+}
+
+#article-img {
+  width: 720px;
+  height: auto;
+  border-radius: 24px;
+  margin-bottom: 32px;
+}
+
+.article > p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4c497b;
+}
+
+.article > .link-container {
+  width: 100%;
+  text-align: center;
+}
+
+.link-container > a {
+  display: inline-block;
+  padding: 16px 32px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #413c91;
+  border-radius: 8px;
+  margin: 32px auto 0px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#article-with-bg {
+  background-color: #f1f4fa;
+  padding-bottom: 64px;
+}
+
+#article-with-bg > div {
+  margin-bottom: 0;
+}
+
+.careers {
+  padding: 40px 0px 40px 0px;
+  background-color: #161346;
+  text-align: center;
+}
+
+.careers > h1 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.careers > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #8287a4;
+  margin-bottom: 32px;
+}
+.recruit-link {
+  width: 100%;
+  text-align: center;
+}
+
+.recruit-link > a {
+  display: inline-block;
+  padding: 16px 32px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #413c91;
+  border-radius: 9999px;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer {
+  padding: 32px 0px 32px 0;
+  background-color: #120f3f;
+  color: #ffffff;
+}
+.footer-content {
+  width: 720px;
+  margin: auto;
+}

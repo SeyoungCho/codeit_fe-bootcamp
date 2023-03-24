@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+#a {
+  padding: 10px;
+  margin: 30px;
+}
+
+#b {
+  margin: 20px;
+}
+
+#c {
+  margin: 40px;
+}
