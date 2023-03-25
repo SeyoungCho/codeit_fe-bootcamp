@@ -51,8 +51,41 @@ nav > img:hover {
   cursor: pointer;
 }
 
-main {
-  height: 1215.5px;
+.faq {
+  width: 65%;
+  margin: 65px auto;
+}
+
+.faq > h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.faq-card {
+  width: 100%;
+  margin: 65px auto;
+  padding: 20px;
+  border-radius: 13px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #f0f6ff;
+  color: black;
+}
+
+.faq-card > h2 > span {
+  color: #6d6afe;
+  font-weight: 800;
+}
+
+.faq-card p {
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+}
+
+hr {
+  border-top: 2px solid black;
 }
 
 footer {

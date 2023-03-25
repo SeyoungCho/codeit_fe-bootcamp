@@ -20,10 +20,6 @@ header {
   padding: 24px 200px;
 }
 
-#intro-wrapper {
-  width: 100%;
-  background-color: #f0f6ff;
-}
 nav {
   display: flex;
   justify-content: space-between;
@@ -50,9 +46,64 @@ nav > #login-btn {
 nav > img:hover {
   cursor: pointer;
 }
+
 main {
-  height: 1215.5px;
+  height: 1150.5px;
+  max-width: 1920px;
 }
+
+.login-form {
+  width: 60%;
+  margin: 65px auto;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  border: 2px solid rgb(93, 93, 93);
+  border-radius: 13px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #f1f1f1;
+}
+
+.login-form * {
+  width: 60%;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.login-form > h1 {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.login-form > label {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.login-form > input {
+  height: 50px;
+  border-radius: 8px;
+  text-indent: 20px;
+}
+
+.login-form > input:hover {
+  border: 2px solid rgb(168, 211, 254);
+}
+
+.login-form > button {
+  background-color: black;
+  height: 50px;
+  color: white;
+  font-size: 24px;
+  margin-top: 40px;
+  border: none;
+}
+
+.login-form > button:hover {
+  color: black;
+  background-color: aliceblue;
+  box-shadow: 0 0 0 3px #000 inset;
+}
+
 footer {
   width: 100%;
   background-color: #111322;

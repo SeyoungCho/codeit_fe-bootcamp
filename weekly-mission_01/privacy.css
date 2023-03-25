@@ -52,7 +52,25 @@ nav > img:hover {
 }
 
 main {
-  height: 1215.5px;
+  height: 1150.5px;
+  max-width: 1920px;
+}
+
+.privacy-policy {
+  width: 60%;
+  margin: 65px auto 0 auto;
+}
+
+.privacy-policy h1 {
+  font-size: 38px;
+  font-weight: 700;
+}
+hr {
+  border-top: 2px solid black;
+}
+.privacy-policy p {
+  line-height: 28px;
+  font-size: 22px;
 }
 
 footer {
