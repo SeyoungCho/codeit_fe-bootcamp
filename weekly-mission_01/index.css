@@ -30,7 +30,7 @@ nav {
   align-items: center;
 }
 
-nav > a {
+nav > #login-btn {
   width: 128px;
   height: 53px;
   border-radius: 8px;
