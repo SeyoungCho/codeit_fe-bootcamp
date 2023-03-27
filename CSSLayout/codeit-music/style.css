@@ -17,6 +17,9 @@ body {
 }
 
 header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   background-image: linear-gradient(
     180deg,
     #000000 15.1%,
@@ -31,18 +34,31 @@ header {
   opacity: 0.5;
 }
 
+.hero {
+  position: relative;
+}
 
 .hero-heading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin: 0;
   padding: 24px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .hero-heading h1 {
+  margin: -160px 0 0 0;
   font-weight: 400;
   font-size: 80px;
   line-height: 95px;
-  text-align: center; 
+  text-align: center;
   color: #ffffff;
 }
 
@@ -53,14 +69,25 @@ header {
   color: rgba(217, 217, 217, 0.5);
 }
 
-
 .hero-heading .big {
   font-weight: 700;
+}
+
+.headline.wrap {
+  padding-top: 130px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .headline-image {
   width: 504px;
   height: 520px;
+}
+
+.headline.wrap > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .headline-heading {
@@ -79,6 +106,9 @@ header {
   background-color: #280357;
   margin: 200px 0;
   padding: 80px 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .promotion-content h2 {
@@ -112,14 +142,18 @@ header {
 }
 
 .plans {
+  display: flex;
+  gap: 24px;
   margin-bottom: 120px;
 }
 
 .card {
+  flex: 1;
   padding: 56px 96px;
   border: 2px solid #ffffff;
   border-radius: 16px;
   text-align: center;
+  position: relative;
 }
 
 .card.event {
@@ -147,6 +181,9 @@ header {
 }
 
 .card.event .event-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   background-color: red;
   font-weight: 700;
   padding: 8px 12px;
@@ -159,6 +196,26 @@ header {
   text-align: left;
 }
 
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 24px;
+}
+
+.benefits .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card.wide {
+  grid-row: 2;
+  grid-column: span 2;
+}
+
 footer {
   margin-top: 160px;
   padding: 64px 180px 80px;
@@ -169,8 +226,24 @@ footer {
   color: #ffffff;
   text-decoration: none;
 }
-
+.footer-content.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .footer-info {
   color: #ffffff;
   color: rgba(255, 255, 255, 0.4);
+}
+
+.internal-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 80px;
+}
+
+.footer-info-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
 }
