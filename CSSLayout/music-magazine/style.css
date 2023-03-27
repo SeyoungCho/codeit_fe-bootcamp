@@ -25,6 +25,7 @@ section {
 .intro {
   display: flex;
 }
+
 .intro > div {
   display: flex;
   flex-direction: column;
