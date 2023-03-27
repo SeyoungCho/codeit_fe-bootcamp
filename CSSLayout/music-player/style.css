@@ -15,8 +15,13 @@ body {
   line-height: 24px;
   height: 100vh;
 }
-
+main {
+  margin-left: 240px;
+}
 .sidebar {
+  position: fixed;
+  inset: 0;
+  flex-direction: column;
   padding: 16px;
   background-color: #161519;
   color: #8c8993;
@@ -57,13 +62,27 @@ body {
 }
 
 .player {
-  height: 100px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
 }
 
 .player-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 16px 40px;
   background-color: rgba(48, 48, 55, 0.7);
   backdrop-filter: blur(15px);
+}
+
+.info {
+  display: flex;
+  flex-basis: 300px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .current {
@@ -89,6 +108,8 @@ body {
 }
 
 .time {
+  text-align: right;
+  flex-basis: 300px;
   color: #8c8993;
 }
 
