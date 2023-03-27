@@ -16,6 +16,21 @@ body {
   color: #161346;
 }
 
+header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+header > div,
+header > ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  gap: 18px;
+}
+
 .logo {
   font-weight: 500;
   font-size: 20px;
@@ -31,10 +46,6 @@ ul.menu {
   list-style: none;
 }
 
-ul.menu > li {
-  display: block;
-}
-
 .menu {
   color: #717f8e;
 }
@@ -48,7 +59,15 @@ ul.menu > li {
 }
 
 main {
+  display: grid;
   margin: 24px 0;
+  grid-template-areas:
+    "prices assets"
+    "prices order"
+    "prices .";
+  grid-template-rows: 307px 1fr 1fr;
+  grid-template-columns: 1fr 437px;
+  gap: 24px;
 }
 
 section {
@@ -57,14 +76,28 @@ section {
   background-color: #ffffff;
 }
 
+.prices {
+  grid-area: prices;
+}
+
 .detail {
+  display: flex;
+  flex-direction: column;
 }
 
 .crypto-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #161346;
   font-weight: 500;
   font-size: 24px;
   line-height: 35px;
+}
+
+.crypto-name-box {
+  display: flex;
+  align-items: center;
 }
 
 .crypto-logo {
@@ -104,9 +137,12 @@ section {
 }
 
 ul.categories {
-  margin: 0;
+  display: flex;
+  justify-content: flex-start;
   padding: 0;
+  gap: 12px;
   list-style: none;
+  margin-top: 50px;
 }
 
 .category {
@@ -193,11 +229,12 @@ table.price-table td {
   min-width: 430px;
   min-height: 300px;
   background-color: #fff1db;
-
   grid-area: assets;
+  text-align: center;
 }
 
 .login-message {
+  padding-top: 32px;
   text-align: center;
   font-size: 24px;
   line-height: 35px;
@@ -214,7 +251,16 @@ table.price-table td {
   line-height: 30px;
 }
 
+.order {
+  grid-area: order;
+}
+
+.order-types {
+  display: flex;
+}
+
 .order-type {
+  flex: 1;
   padding: 8px;
   border-bottom: 2px solid #d1d1dc;
   color: #d1d1dc;
@@ -235,6 +281,14 @@ table.price-table td {
 .order .quantity,
 .order .total {
   margin: 24px 0;
+}
+
+.order .available div.label {
+  float: left;
+}
+
+.order .available > span {
+  float: right;
 }
 
 .order-button {
@@ -262,6 +316,8 @@ table.price-table td {
 }
 
 .input-container {
+  display: flex;
+  justify-content: space-between;
   margin: 8px 0;
   padding: 14px 24px;
   border-radius: 8px;
@@ -279,6 +335,12 @@ table.price-table td {
   color: #161346;
   text-align: center;
   font-size: 16px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .order .total-price {
